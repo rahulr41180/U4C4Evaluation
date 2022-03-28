@@ -41,7 +41,7 @@ const authenticate = async(req,res,next) =>
         return res.status(500).send({message : error.message});
     }
 
-    req.User2 = docoded.User;
+    // req.User2 = docoded.User;
 
     return next();
 }
